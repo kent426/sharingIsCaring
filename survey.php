@@ -11,7 +11,7 @@
                 echo "<legend>$onequestion->name</legend>";
                 foreach ($onequestion->choices as $oneitem) {
                     //one choice
-                    echo "<input type='radio' name=$onequestion->name value=$oneitem->value />$oneitem->text<br />";
+                    echo "<input type='radio' name='$onequestion->name' value=$oneitem->value />$oneitem->text<br />";
                 }
                 echo "</fieldset>";
                 echo "<br/>";
