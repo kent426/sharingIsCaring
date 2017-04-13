@@ -29,7 +29,8 @@
 
                     }
 
-                    echo $j->answers[$choiceCount[$maxint]]->answer;
+                    echo "<h1>".$j->answers[$maxint]->answer."</h1>";
+                    echo "<img src=\"".$j->answers[$maxint]->image."\" id=\"pic\">";
                     /*$max = -2134;
                     $index = -1;
                     $count = 0;
@@ -50,7 +51,7 @@
             ?>
             
 
-            <img src="kirito.png" id="pic">
+
         </div>
          <div id="fb-root"></div>
          <script>(function(d, s, id) {
