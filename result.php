@@ -10,8 +10,45 @@
         <div style="display: table; margin: 0 auto">
 
             <h2 id="h2">The character you are most like is:</h2>
+            <?php
+                $max = 0;
+                $maxint = 0;
+                if($json = file_get_contents('http://projectv.me/api/'.$_GET['form'].'.json')) {
+                    $j = json_decode(stripslashes($json));
+                    $choiceCount = [0,0,0,0];
+                    foreach($_POST as $post) {
+                        $choiceCount[$post - 1]++;
+                    }
+                    $max = $choiceCount[0];
+                    $maxint = 0;
+                    for($i = 0;$i<sizeof($choiceCount);$i++) {
+                        if($max < $choiceCount[$i]) {
+                            $maxint = $i;
+                            $max = $choiceCount[$i];
+                        }
 
-            <h1 id="h1">Kirigaya Kazuto</h1>
+                    }
+
+                    echo $j->answers[$choiceCount[$maxint]]->answer;
+                    /*$max = -2134;
+                    $index = -1;
+                    $count = 0;
+                    foreach($choiceCount as $choice) {
+                        if($choice > $max) {
+                            $max = $choice;
+                            $index = $count;
+                        }
+                        $count++;
+                    }
+                    foreach ($j->answers as $answer) {
+                        if($answer->value == $count)
+                            echo "<h1 id=\"h1\">".$answer->answer."</h1>";
+                    }*/
+
+                }
+
+            ?>
+            
 
             <img src="kirito.png" id="pic">
         </div>
