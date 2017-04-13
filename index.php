@@ -40,6 +40,12 @@
         <br/>
         <div class="row">
             <div class="col-md-12 hidden-sm-down advertisement">
+                <img src="Image/badad.png" class="img-responsive" style="display:inline-block">
+                <img src="Image/badad.png" class="img-responsive" style="display:inline-block">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 hidden-sm-down advertisement">
                 <img src="Image/728x90.png" class="img-responsive">
             </div>
         </div>
