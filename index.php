@@ -37,7 +37,7 @@
         }
 
         head, body {
-            background-color: lightgray;
+            background-color: lightblue;
         }
     </style>
 </head>
