@@ -18,16 +18,11 @@
             }
             echo "<input type='submit' value='Submit now' />";
         } else {
-            echo "I don't know";
+            echo "<h1>404 NOT FOUND</h1>";
         }
     } else {
-        echo "I don't know";
+        echo "<h1>404 NOT FOUND</h1>";
     }
-
-
-    //array of questions
-
-
     ?>
 </form>
 
