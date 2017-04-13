@@ -33,8 +33,7 @@
 
         #pic {
             align-items: center;
-            height: 300px;
-            width: 600px;
+            max-width: 600px;
         }
 
         head, body {

@@ -29,7 +29,7 @@
 
                     }
 
-                    echo $j->answers[$maxint]->answer;
+                    echo "<h1>".$j->answers[$maxint]->answer."</h1>";
                     echo "<img src=\"".$j->answers[$maxint]->image."\" id=\"pic\">";
                     /*$max = -2134;
                     $index = -1;
