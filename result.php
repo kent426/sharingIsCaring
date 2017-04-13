@@ -16,7 +16,7 @@
             }
 
             head, body {
-                background-color: lightblue;
+                background-color: lightgray;
             }
         </style>
     </head>
